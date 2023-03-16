@@ -1,1 +1,39 @@
+<nav class="ylanavi">
 <h2>TestiApp Azureen NET22 Jarno (Angular)</h2>
+</nav>
+
+<section class="main">
+<h4>Mene Azure portal</h4>
+<ul>
+    <li>Tee Webapp</li>
+    <li>Valitse Windows</li>
+    <li>Valitse NODE 16</li>
+    <li>Katso että app on free tier eli maksuton!</li>
+    <li>Paina Create</li>
+</ul>
+<h4>Mene luotuun resurssiin</h4>
+<ul>
+    <li>Valitse Deployment Center</li>
+    <li>Source GitHub</li>
+    <li>Valitse Angular reposito ja branch (main)</li>
+    <li>Workflow Option: Add a workflow ...</li>
+    <li>OK. Tarkista workflow tiedosto.</li>
+    <li>Kommentoi testi pois YML tiedostosta # merkillä -> # npm run test --if-present</li>
+    <li>Lopuksi SAVE</li>
+    <li>Kestää hetki ja Github alkaa ajamaan pipelineä, tässä voi kestää kauan. Minulla meni 1,5h ensimmäisellä ajolla!</li>
+</ul>
+<h4>Mene Githubiin</h4>
+<ul>
+    <li>Mene tähän ladattuun repositoon</li>
+    <li>Otsikko rivillä on Actions, voit sieltä seurata pipelinen ajoa</li>
+    <li>Katso ettei tullut erroria. Lopuksi mene Azureen</li>
+</ul>
+<h4>Mene Azureen</h4>
+<ul>
+    <li>Avaa tämä sama wepapp</li>
+    <li>Valitse vasemmasta valikosta : Configuration</li>
+    <li>Valitse keskiotsikoista : Path mappings</li>
+    <li>Keskellä on Physical Path niminen kenttä: laita siihen site\wwwroot\dist\testiapp-azure (HUOM) vaihda testiapp-azure nimeksi oman ohjelman nimi!!</li>
+    <li>SAVE ja nyt sivusi pitäisi näkyä Azuren kautta!</li>
+</ul>
+</section>
